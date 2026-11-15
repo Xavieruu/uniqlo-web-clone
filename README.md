@@ -25,13 +25,13 @@ A responsive, interactive React clone/redesign of the UNIQLO storefront, built a
 
 | | |
 |---|---|
-| **Developer** | Xavier |
+| **Developer** | Ashton Xavier E. Maitim |
 | **School** | National University Manila (NU Manila) |
 | **Program** | Bachelor of Science in Information Technology |
-| **Block / Section** | _[your block]_ |
-| **Course / Subject** | _[course code and name]_ |
-| **Instructor** | _[instructor name]_ |
-| **Academic Year / Term** | _[e.g., AY 2026–2027, Term 1]_ |
+| **Block / Section** | INF241 |
+| **Course / Subject** | CTINASSL - Information Assurance and Security |
+| **Instructor** | Mr. Joseph Martin G. Gojo |
+| **Academic Year / Term** | AY 2026–2027, Term 2 |
 
 ---
 
