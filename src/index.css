@@ -1,0 +1,50 @@
+:root {
+  --red: #ed1c24;
+  --black: #050505;
+  --white: #ffffff;
+  --gray: #ebecee;
+  --text: #111;
+  --nav-h: 64px;
+  --font-display: 'Jost', 'Futura', sans-serif;
+  --font-ui: 'Lexend', 'Outfit', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 400;
+}
