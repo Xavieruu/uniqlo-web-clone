@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import { COLORS, formatPrice } from '../data/products'
 import { useCart } from '../context/CartContext'
+import { useAuth } from '../context/AuthContext'
 
 export default function ProductCard({ product }) {
   const { addItem } = useCart()
+  const { wishlist, toggleWishlist } = useAuth()
   const [color, setColor] = useState(product.colors[0])
   const [size, setSize] = useState(product.sizes[Math.floor(product.sizes.length / 2)])
-  const [liked, setLiked] = useState(false)
+  const liked = wishlist.includes(product.id)
 
   return (
     <article className="product-card">
@@ -14,9 +16,9 @@ export default function ProductCard({ product }) {
         <img src={product.img} alt={product.name} loading="lazy" />
         <button
           className={`heart ${liked ? 'on' : ''}`}
-          onClick={() => setLiked((l) => !l)}
+          onClick={() => toggleWishlist(product.id)}
           aria-pressed={liked}
-          aria-label="Add to wishlist"
+          aria-label={liked ? 'Remove from wishlist' : 'Add to wishlist'}
         >
           {liked ? '♥' : '♡'}
         </button>

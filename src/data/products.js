@@ -37,6 +37,12 @@ export const sizesFor = (genders) =>
 
 const catImg = Object.fromEntries(CATEGORIES.map((c) => [c.id, c.img]))
 
+// The API returns category ids only; the image is attached on the client.
+export const withImage = (p) => ({ ...p, img: catImg[p.category] })
+
+export const SHIPPING_THRESHOLD = 3000
+export const SHIPPING_FEE = 150
+
 const make = (id, name, category, genders, price, colors) => ({
   id,
   name,

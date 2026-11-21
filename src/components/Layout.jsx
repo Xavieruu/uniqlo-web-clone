@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Navbar from './Navbar'
 import CartDrawer from './CartDrawer'
+import AuthModal from './AuthModal'
 import Toast from './Toast'
 
 export default function Layout() {
@@ -19,6 +20,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <CartDrawer />
+      <AuthModal />
       <Toast />
     </>
   )
