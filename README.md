@@ -22,13 +22,13 @@ A responsive, interactive React storefront inspired by UNIQLO, now with a Node.j
 
 | | |
 |---|---|
-| **Developer** | Xavier |
-| **School** | National University Manila (NU Manila) |
+| **Developer** | Ashton Xavier E. Maitim |
+| **School** | National University Manila |
 | **Program** | Bachelor of Science in Information Technology |
-| **Block / Section** | _[your block]_ |
-| **Course / Subject** | _[course code and name]_ |
-| **Instructor** | _[instructor name]_ |
-| **Academic Year / Term** | _[e.g., AY 2026–2027, Term 1]_ |
+| **Block / Section** | INF241 |
+| **Course / Subject** | CTINASSL |
+| **Instructor** | Mr. Joseph Martin G. Gojo |
+| **Academic Year / Term** | AY 2026–2027, Term 2 |
 
 ---
 
