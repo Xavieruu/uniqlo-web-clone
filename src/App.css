@@ -296,3 +296,10 @@
   .hello { display: none; }
   .nav-right { gap: 12px; }
 }
+
+/* ============ Confirm dialog ============ */
+.modal.confirm { text-align: center; padding: 32px 28px 24px; }
+.modal.confirm h3 { font-family: var(--font-ui); font-weight: 600; font-size: 1.3rem; margin-bottom: 10px; }
+.modal.confirm p { margin: 0 0 24px; color: #555; line-height: 1.5; font-size: 0.92rem; }
+.confirm-actions { display: flex; gap: 12px; }
+.confirm-actions .btn-outline, .confirm-actions .btn-solid { flex: 1; margin: 0; padding: 12px; font-size: 0.95rem; }

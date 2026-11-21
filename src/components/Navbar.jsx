@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import { useAuth } from '../context/AuthContext'
 import images from '../data/images'
+import ConfirmDialog from './ConfirmDialog'
 
 function Logo() {
   return (
@@ -23,6 +24,8 @@ export default function Navbar() {
     { to: '/products', label: 'Products' },
     ...(user ? [{ to: '/orders', label: 'Orders' }] : []),
   ]
+
+  const [confirmOpen, setConfirmOpen] = useState(false)
 
   return (
     <header className="navbar">
@@ -55,7 +58,7 @@ export default function Navbar() {
         {user ? (
           <span className="account">
             <span className="hello">Hi, {user.name.split(' ')[0]}</span>
-            <button className="account-btn" onClick={logout}>Log out</button>
+            <button className="account-btn" onClick={() => setConfirmOpen(true)}>Log out</button>
           </span>
         ) : (
           <button className="account-btn" onClick={openAuth}>Log in</button>
@@ -70,6 +73,18 @@ export default function Navbar() {
         </button>
         <Logo />
       </div>
+
+      <ConfirmDialog
+      open={confirmOpen}
+      title="Log out?"
+      message="You’ll need to log in again to check out or see your saved items and orders. Items in your cart will stay."
+      confirmLabel="Log out"
+      onCancel={() => setConfirmOpen(false)}
+      onConfirm={() => {
+        setConfirmOpen(false)
+        logout()
+        }}
+/>
     </header>
   )
 }
